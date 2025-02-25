@@ -1,14 +1,32 @@
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { TextIcon } from '@radix-ui/react-icons';
+import { ImageIcon, TextIcon } from '@radix-ui/react-icons';
 
 const tools = [
+  {
+    name: '文字数カウンター',
+    description: 'テキストの文字数、単語数、行数をカウントします',
+    href: '/text/counter',
+    icon: TextIcon,
+  },
+  {
+    name: '一括文字変換',
+    description: 'テキストを様々な形式に一括変換します',
+    href: '/text/converter',
+    icon: TextIcon,
+  },
   {
     name: '改行コード込み文字列ヘ変換',
     description: 'テキストを改行コード(/n)込みのテキストへ変換する',
     href: '/text/kaigyo',
     icon: TextIcon,
+  },
+  {
+    name: 'JPG/PNG to WebP',
+    description: '画像をWebP形式に変換してサイズを削減します',
+    href: '/image/webp-converter',
+    icon: ImageIcon,
   },
   // {
   //   name: 'Engagement',
