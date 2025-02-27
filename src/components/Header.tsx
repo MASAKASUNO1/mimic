@@ -11,6 +11,13 @@ const tools = [
     icon: TextIcon,
   },
   // {
+  {
+    name: '文字数カウンター',
+    description: 'テキスト内の文字数をカウントする',
+    href: '/character-counter',
+    icon: TextIcon,
+  },
+
   //   name: 'Engagement',
   //   description: 'Speak directly to your customers',
   //   href: '#',
